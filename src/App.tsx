@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  TonicProvider,
+  PortalManager, // allows you to create and manage portals in the application
+  // ToastManager, // allows you to create and manage toasts in the application
+} from '@tonic-ui/react'
+import Layout from './layouts/Layout'
+import MenuIcon from './components/MenuIcon'
+
+import './App.css'
+import styles from './styles.module.scss'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <TonicProvider
+      colorMode={{
+        defaultValue: 'dark', // One of: 'dark', 'light'
+      }}
+      useCSSBaseline={true} // If `true`, apply CSS reset and base styles
+    >
+      <PortalManager>
+        <Layout>
+          <div className={styles.body}>
+            <MenuIcon />
+          </div>
+        </Layout>
+      </PortalManager>
+    </TonicProvider>
+  )
 }
 
-export default App;
+export default App
