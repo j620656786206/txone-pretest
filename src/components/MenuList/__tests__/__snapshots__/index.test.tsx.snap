@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomMenuList Test with dark mode, should match snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="css-1y2pe6x-Box ebasi3p0"
+    />
+  </div>
+</body>
+`;
