@@ -6,6 +6,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Website: https://txone-pretest.vercel.app/
 
+## Test Coverage Report
+
+<img width="773" alt="image" src="https://github.com/j620656786206/txone-pretest/assets/20604897/f77dd773-5bb4-4f0d-aeca-d9a3254dd6c8">
+
+
 ## Available Scripts
 
 In the project directory, you can run:
